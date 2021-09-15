@@ -15,6 +15,6 @@ import { ImplementBootstrapComponent } from './containers/implement-bootstrap/im
 @NgModule({
     imports: [BrowserModule], // modules dependencies
     declarations: [ContainerComponent, HeaderComponent, FooterComponent, ContentComponent, EventBindingComponent, ImplementBootstrapComponent], // Used to register components/services
-    bootstrap: [EventBindingComponent] // container required at startup
+    bootstrap: [ImplementBootstrapComponent] // container required at startup
 })
 export class AppModule { }
