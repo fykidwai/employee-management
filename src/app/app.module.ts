@@ -5,6 +5,7 @@ import { ContentComponent } from "./companyPage/contentComponent/content.compone
 import { FooterComponent } from "./companyPage/footerComponent/footer.component";
 import { HeaderComponent } from "./companyPage/header/header.component";
 import { EventBindingComponent } from './containers/event-binding/event-binding.component';
+import { ImplementBootstrapComponent } from './containers/implement-bootstrap/implement-bootstrap.component';
 
 
 
@@ -13,7 +14,7 @@ import { EventBindingComponent } from './containers/event-binding/event-binding.
  */
 @NgModule({
     imports: [BrowserModule], // modules dependencies
-    declarations: [ContainerComponent, HeaderComponent, FooterComponent, ContentComponent, EventBindingComponent], // Used to register components/services
+    declarations: [ContainerComponent, HeaderComponent, FooterComponent, ContentComponent, EventBindingComponent, ImplementBootstrapComponent], // Used to register components/services
     bootstrap: [EventBindingComponent] // container required at startup
 })
 export class AppModule { }
