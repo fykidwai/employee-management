@@ -1,8 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 #container-main {
-    padding: 10px;
+  padding: 10px;
 }
 h2 {
-    color: aqua;
+  color: aqua;
 }

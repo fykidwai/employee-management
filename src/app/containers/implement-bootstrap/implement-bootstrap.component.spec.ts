@@ -8,9 +8,8 @@ describe('ImplementBootstrapComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImplementBootstrapComponent ]
-    })
-    .compileComponents();
+      declarations: [ImplementBootstrapComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
