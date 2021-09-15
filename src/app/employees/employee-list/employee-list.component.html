@@ -1,6 +1,8 @@
-<!-- Not advisable to pass DOM element like this in Angular. This shouldn't be used-->
-Filter Text: <input type="text" (keyup)="updateList(userName.value)" #userName /> 
-<input type="button" (click)="updateList(userName.value)" value="Click to Update" /><br/><br/>
+<!--ngModel here is providing Two-way data binding. So the the text from text box is set in filterText.
+In updateList function this list is filtered using the same filterText variable-->
+Filter Text: <input type="text" [(ngModel)]="filterText" (keyup)="updateList()" #userName />
+<br>
+<br>
 <!-- Can't combine *ngFor and *ngIf together as we can't have 2 structural directives in 1 line..!-->
 <ng-container *ngFor="let employee of empList">
     <!-- Using ng-container instead of div helps in removing the empty div tags. 
