@@ -8,6 +8,7 @@ import { HeaderComponent } from './companyPage/header/header.component';
 import { EventBindingComponent } from './containers/event-binding/event-binding.component';
 import { ImplementBootstrapComponent } from './containers/implement-bootstrap/implement-bootstrap.component';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
+import { EmployeeModelComponent } from './employees/employee-model/employee-model.component';
 
 /**
  *  Decorating a class to let Angular know that this is a module not just sny class
@@ -22,7 +23,8 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     EventBindingComponent,
     ImplementBootstrapComponent,
     EmployeeListComponent,
+    EmployeeModelComponent,
   ], // Used to register components/services
-  bootstrap: [EmployeeListComponent], // container required at startup
+  bootstrap: [EmployeeModelComponent], // container required at startup
 })
 export class AppModule {}

@@ -1,0 +1,27 @@
+<!--ngModelChange event is triggered as soon as the value changes
+change event can be used if the event is to be triggered when user clicks outside textbox-->
+<input type="text" [(ngModel)]="filterText" (ngModelChange)="getInfo($event)" />
+<br />
+<br />
+<!-- Can't combine *ngFor and *ngIf together as we can't have 2 structural directives in 1 line..!-->
+<ng-container *ngFor="let employee of empList">
+  <!-- Using ng-container instead of div helps in removing the empty div tags.
+        Empty div tags should be thought in terms of DOM elements. Removing them reduces the memory footprint of the app..!-->
+
+  <div class="card" style="width: 18rem" class="employee-container">
+    <img
+      src="https://images.unsplash.com/photo-1579256945823-f007794790df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZW1wbG95ZWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ employee.name }} ({{ employee.id }})</h5>
+      <section class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </section>
+      <br />
+      <a href="#" class="btn btn-primary">Delete {{ employee.name }}</a>
+    </div>
+  </div>
+</ng-container>
